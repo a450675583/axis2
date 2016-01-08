@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>  
+       <service name="myService">  
+              <description>Web Service</description>  
+              <parameter name="ServiceClass">com.elgin.webservice.WebServiceDemo</parameter>  
+              <messageReceivers>  
+                     <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />  
+                     <messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />  
+              </messageReceivers>  
+       </service>  
+</serviceGroup> 
